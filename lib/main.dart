@@ -78,11 +78,56 @@ class Homepage extends StatelessWidget {
       // ),
 
       //Container, Margin
-      body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-        margin: EdgeInsets.all(50),
-        child: Text('Life In World'),
-        color: Colors.orange[400],
+      // body: Container(
+      //   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      //   margin: EdgeInsets.all(50),
+      //   child: Text('Life In World'),
+      //   color: Colors.orange[400],
+      // ),
+
+      //ROWS
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //   crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   children: <Widget>[
+      //     Text('Hello Life in Rows'),
+      //     RaisedButton(
+      //       onPressed: () {
+      //         print('Life is not bad');
+      //       },
+      //       color: Colors.orange,
+      //       child: Text('submit'),
+      //     ),
+      //     Container(
+      //       color: Colors.deepOrangeAccent,
+      //       padding: EdgeInsets.all(20.5),
+      //       child: Text('Live Container'),
+      //     )
+      //   ],
+      // ),
+
+      //COLUMNS
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          Text('hello in columns'),
+          Container(
+            color: Colors.blue,
+            padding: EdgeInsets.all(20.0),
+            child: Text('1st Blue'),
+          ),
+          Container(
+            color: Colors.red,
+            padding: EdgeInsets.all(25.0),
+            child: Text('2nd Red'),
+          ),
+          Container(
+            color: Colors.green,
+            padding: EdgeInsets.all(30.0),
+            child: Text('3rd green'),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
